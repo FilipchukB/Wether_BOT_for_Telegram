@@ -1,10 +1,9 @@
 import telebot
 import pyowm
 
-owm = pyowm.OWM('6d4050ec69444e19183c61382e5f4bb7', language='ua')
+owm = pyowm.OWM('ваш api', language='ua')
 
-bot = telebot.TeleBot("900658304:AAEcHibwAx2NsGUcAnZJFWtDznXLe0Hwb1M")
-
+bot = telebot.TeleBot("ваш Telegran_bot")
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
